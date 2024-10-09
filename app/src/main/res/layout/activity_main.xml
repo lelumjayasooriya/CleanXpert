@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/colorful_gradient"
+    android:padding="16dp">
+
+    <!-- Status Text -->
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CleanXpert Disconnected"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:background="@drawable/status_background" />
+
+    <!-- Start Cleaning Button -->
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Start Cleaning"
+        android:layout_below="@id/status_text"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_start_background"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:padding="12dp" />
+
+    <!-- Stop Cleaning Button -->
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Stop Cleaning"
+        android:layout_below="@id/btn_start"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_stop_background"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:padding="12dp" />
+
+    <!-- Schedule Cleaning Button -->
+    <Button
+        android:id="@+id/btn_schedule"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Schedule Cleaning"
+        android:layout_below="@id/btn_stop"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_schedule_background"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:padding="12dp" />
+
+    <!-- Scrollable Serial Monitor -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_schedule"
+        android:layout_marginTop="20dp"
+        android:fillViewport="true">
+
+        <TextView
+            android:id="@+id/serial_monitor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Serial Monitor:"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:background="@drawable/serial_monitor_background"/>
+    </ScrollView>
+
+</RelativeLayout>
